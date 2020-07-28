@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+  background-image: url(/imagen/fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+body::before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)
+  );
+  opacity: 0.8;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+#title {
+  display: grid;
+  grid-template-rows: 50%;
+  gap: 1px;
+  justify-content: center;
+}
+#description {
+  text-align: center;
+  font-family: monospace;
+}
+
+#survey-form {
+  background: rgb(31, 31, 63);
+  padding: 2.5rem;
+  border-radius: 0.25rem;
+  display: grid;
+  grid-template-columns: 100%;
+  margin-left: 23%;
+  margin-right: 23%;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: 100%;
+  /* padding: 15px; */
+  gap: 5px;
+  margin-top: 8px;
+  font-family: inherit;
+}
+
+.form-control {
+  /* display: block; */
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #3986b9;
+  /* background-origin: padding-box; */
+  height: 35px;
+  margin: 0px;
+  border-width: 0;
+  /* border-color: rgb(29, 89, 145); */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.form-control:hover {
+  cursor: pointer;
+  /* color: rgb(29, 89, 145); */
+  background-color: rgb(212, 212, 212);
+  border-style: solid;
+}
+
+.input-checkbox {
+  margin-top: 5px;
+  display: inline-block;
+  margin-right: 0.625rem;
+}
+
+.input-textarea {
+  height: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+#submit {
+  background-color: rgb(15, 240, 191);
+  height: 40px;
+  border: none;
+}

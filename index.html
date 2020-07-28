@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Survey Form</title>
+</head>
+
+
+<body>
+  <div id="title">
+    <h1>Academia geek survey form</h1>
+    <p id="description">Formando talentos para el sector TI</p>
+  </div>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nombre</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre" required="" />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su Email" required="" />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Edad<span class="clue"> (opcional)</span></label>
+      <input type="number" name="Edad" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+    </div>
+    <div class="form-group">
+      <p>¿Qué opción describe mejor tu rol actual?</p>
+      <select id="dropdown" name="role" class="form-control" required="">
+        <option disabled="" selected="" value="">seleccione su rol actual</option>
+        <option value="Estudiante">Estudiante</option>
+        <option value="empleado">Empleado tiempo completo</option>
+        <option value="aprendiz">aprendiz tiempo completo</option>
+        <option value="prefiero no">prefiero no decir</option>
+        <option value="otro">otros</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Recomendarias academia geek a tus amigos?</p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="" />Si
+      </label>
+      <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Tal vez
+      </label>
+      <label>
+        <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />NO estoy seguro
+      </label>
+    </div>
+    <div class="form-group">
+      <p>
+        Que es lo que mas te gusta de academia geek?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required="">
+        <option disabled="" selected="" value="">seleccione una opcion</option>
+        <option value="Desafios">Desafios</option>
+        <option value="proyectos">Proyectos</option>
+        <option value="Instructores">Instructores</option>
+        <option value="empleabilidad">Emplebilidad</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>
+        Que diplomados te gustaria ver en academia geek?
+        <span class="clue">(Marque todo lo que corresponda)</span>
+      </p>
+      <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end</label>
+      <label>
+        <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end
+      </label>
+      <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />full
+        stack</label>
+      <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />video juegos</label>
+      <label><input name="prefer" value="python" type="checkbox" class="input-checkbox" />Python</label>
+      <label><input name="prefer" value="Java" type="checkbox" class="input-checkbox" />Java</label>
+      <label><input name="prefer" value="inteligencia-artificial" type="checkbox" class="input-checkbox" />inteligencia
+        artificial</label>
+      <label><input name="prefer" value="aws" type="checkbox" class="input-checkbox" />aws</label>
+      <label><input name="prefer" value="ciencia-datos" type="checkbox" class="input-checkbox" />ciencia de
+        datos</label>
+      <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />IU</label>
+      <label><input name="prefer" value="cursos adecionales" type="checkbox" class="input-checkbox" />otros</label>
+    </div>
+    <div class="form-group">
+      <p>Algun comentario o sugerencia?</p>
+      <textarea id="comments" class="input-textarea" name="comment"
+        placeholder="Ingrese su comentario aqui..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+    </div>
+  </form>
+</body>
+
+
+</html>
